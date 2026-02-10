@@ -1,0 +1,79 @@
+.expense-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Title */
+.list-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #30364f;
+}
+
+/* Table wrapper for horizontal scroll on small screens */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 12px;
+}
+
+/* Main Table */
+.expense-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Table Header */
+.expense-table thead {
+  background: linear-gradient(135deg, #30364f, #4a5170);
+}
+
+.expense-table th {
+  padding: 12px 14px;
+  text-align: left;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #f0f0db;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Table Body */
+.expense-table td {
+  padding: 12px 14px;
+  font-size: 0.9rem;
+  color: #30364f;
+}
+
+/* Row Styling */
+.expense-table tbody tr {
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.expense-table tbody tr:hover {
+  background: rgba(48, 54, 79, 0.08);
+}
+
+/* Delete Button */
+.delete-btn {
+  background: none;
+  border: none;
+  color: #e63946;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.delete-btn:hover {
+  text-decoration: underline;
+  transform: scale(1.05);
+}

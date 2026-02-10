@@ -1,0 +1,55 @@
+.total-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.total-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.total-header h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #30364f;
+}
+
+/* Currency Dropdown */
+.currency-select {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(6px);
+  font-size: 0.9rem;
+  color: #30364f;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.currency-select:hover {
+  background: rgba(255, 255, 255, 0.45);
+}
+
+/* Total Display */
+.total-value {
+  margin-top: 6px;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.currency {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #30364f;
+}
+
+.amount {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #30364f;
+  letter-spacing: 0.5px;
+}

@@ -1,0 +1,95 @@
+/* Main App Background */
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #30364f, #3b4262);
+  padding: 24px;
+}
+
+/* Content Wrapper */
+.app-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.app-header {
+  margin-bottom: 32px;
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f0f0db;
+}
+
+.app-header p {
+  margin-top: 6px;
+  font-size: 1rem;
+  color: #555;
+}
+/* Header Container */
+.app-header {
+  background-color: #acbac4;
+  border-radius: 14px;
+  padding: 28px 20px;
+  text-align: center;
+  margin-bottom: 32px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Main Title */
+.app-title {
+  margin: 0;
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #f0f0db;
+  letter-spacing: 0.5px;
+}
+
+/* Subtitle */
+.app-subtitle {
+  margin-top: 6px;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+
+  color: #d7d7c4;
+}
+/* Grid Layout */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+/* Desktop Layout */
+@media (min-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+/* Columns */
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Card UI */
+.card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
