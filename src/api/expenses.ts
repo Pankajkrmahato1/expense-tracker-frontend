@@ -1,11 +1,16 @@
 import axios from "axios";
 
-const BASE_URL = "https://expense-tracker-backend-a4bi.onrender.com";
+export interface Expense {
+  id: string;
+  item_name: string;
+  amount: number;
+  category: string;
+  currency: string;
+  created_at: string;
+}
 
-export const createExpense = (data: any) =>
-  axios.post(`${BASE_URL}/expenses`, data);
+const API_URL = import.meta.env.VITE_API_BASE_URL;
 
-export const getExpenses = () => axios.get(`${BASE_URL}/expenses`);
-
-export const deleteExpense = (id: string) =>
-  axios.delete(`${BASE_URL}/expenses/${id}`);
+export const getExpenses = () => axios.get(`${API_URL}/expenses`);
+export const createExpense = (data) => axios.post(`${API_URL}/expenses`, data);
+export const deleteExpense = (id) => axios.delete(`${API_URL}/expenses/${id}`);
